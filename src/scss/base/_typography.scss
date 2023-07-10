@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+@font-face {
+  font: {
+    family: "Jakarta";
+    weight: 500 800;
+  }
+  src: url("../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+body {
+  font-family: "Jakarta";
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+}
