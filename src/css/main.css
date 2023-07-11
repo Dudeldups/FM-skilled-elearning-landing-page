@@ -71,5 +71,43 @@ button {
   src: url("../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
 }
 body {
-  font-family: "Jakarta";
+  font: 500 1rem/normal "Jakarta", sans-serif;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-weight: 800;
+}
+
+.btn {
+  font-weight: 700;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+@media (max-width: 48em) {
+  .header__logo {
+    transform: scale(0.778);
+  }
+}
+
+.btn {
+  padding: 0.9rem 1.5rem;
+  border-radius: 100px;
+}
+.header .btn {
+  background-color: #13183f;
+}
+.header .btn:hover, .header .btn:focus {
+  background-color: #666ca3;
+}
+.cta .btn {
+  background-image: linear-gradient(#ff6f48, #f02aa6);
+}
+.cta .btn:hover, .cta .btn:focus {
+  opacity: 50%;
 }/*# sourceMappingURL=main.css.map */

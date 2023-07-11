@@ -1,4 +1,24 @@
 @use "../abstracts/" as *;
 
 .btn {
+  padding: 0.9rem 1.5rem;
+  border-radius: 100px;
+
+  .header & {
+    background-color: $clr-blue-dark;
+
+    &:hover,
+    &:focus {
+      background-color: $clr-blue-light;
+    }
+  }
+
+  .cta & {
+    background-image: linear-gradient($grd-orange-pink);
+
+    &:hover,
+    &:focus {
+      opacity: 50%;
+    }
+  }
 }

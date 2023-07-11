@@ -20,23 +20,27 @@
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="#">
-        <img src="src/assets/images/logo-dark.svg" alt="skilled logo" />
+        <img
+          src="src/assets/images/logo-dark.svg"
+          alt="skilled logo"
+          class="header__logo"
+        />
       </a>
-      <button class="btn header__btn">Get Started</button>
+      <button class="btn">Get Started</button>
     </header>
 
     <main>
-      <article class="cta">
-        <section class="cta__text">
+      <div class="cta">
+        <article class="cta__text">
           <h1 class="cta__title">Maximize skill, minimize budget</h1>
           <p class="cta__desc">
             Our modern courses across a range of in-demand skills will give you
             the knowledge you need to live the life you want.
           </p>
-          <button class="btn cta__btn">Get Started</button>
-        </section>
+          <button class="btn">Get Started</button>
+        </article>
 
         <aside>
           <picture class="cta__img">
@@ -48,10 +52,13 @@
               srcset="src/assets/images/image-hero-tablet.png"
               media="(min-width: 48rem)"
             />
-            <img src="src/assets/images/image-hero-mobile.png" alt="" />
+            <img
+              src="src/assets/images/image-hero-mobile.png"
+              alt="1451 course hours and 29000 members"
+            />
           </picture>
         </aside>
-      </article>
+      </div>
 
       <div class="grid">
         <section class="grid__box-gradient">
@@ -105,7 +112,7 @@
       <a href="#">
         <img src="src/assets/images/logo-light.svg" alt="skilled logo" />
       </a>
-      <button class="btn footer__btn">Get Started</button>
+      <button class="btn">Get Started</button>
     </footer>
   </body>
 </html>

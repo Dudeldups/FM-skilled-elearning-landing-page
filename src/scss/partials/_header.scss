@@ -1,4 +1,14 @@
 @use "../abstracts/" as *;
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  &__logo {
+    @include mq($until: 768px) {
+      transform: scale(0.778);
+    }
+  }
 }
