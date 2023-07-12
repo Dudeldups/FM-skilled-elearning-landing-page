@@ -93,6 +93,28 @@ body {
   color: #83869a;
 }
 
+.grid__title-main {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #fff;
+}
+.grid__title-sub {
+  font-size: 1.25rem;
+  color: #13183f;
+}
+.grid__desc {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #83869a;
+}
+.grid__link {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: #f74780;
+  text-decoration: none;
+}
+
 .padding-inline {
   padding-inline: clamp(
     1rem,
@@ -141,6 +163,29 @@ body {
     inset: 0 0 auto auto;
     transform: scale(0.8) translate(55%, -40%);
   }
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem 0.7rem;
+  background: linear-gradient(#fff, #f0f1ff);
+}
+.grid__box:first-child {
+  padding-top: 1.5rem;
+  background: linear-gradient(#ff6f48, #f02aa6);
+}
+.grid__box {
+  padding: 0 1.75rem 2rem;
+  background: #fff;
+  border-radius: 0.625rem;
+}
+.grid__box img {
+  position: relative;
+  transform: translateY(-43%);
+}
+.grid__desc {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn {

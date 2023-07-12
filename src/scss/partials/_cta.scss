@@ -23,7 +23,6 @@
     @include mq(768px) {
       position: absolute;
       inset: 0 0 auto auto;
-      // transform: scale(0.8) translate(55vw, -44vw);
       transform: scale(0.8) translate(55%, -40%);
     }
   }

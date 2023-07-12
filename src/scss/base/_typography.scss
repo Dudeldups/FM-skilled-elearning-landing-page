@@ -34,3 +34,30 @@ body {
     color: $clr-grey;
   }
 }
+
+.grid {
+  &__title-main {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $clr-white;
+  }
+
+  &__title-sub {
+    font-size: 1.25rem;
+    color: $clr-blue-dark;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: $clr-grey;
+  }
+
+  &__link {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    color: $clr-pink-dark;
+    text-decoration: none;
+  }
+}

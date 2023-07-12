@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+
+.grid {
+  display: grid;
+  gap: 2.5rem 0.7rem;
+  background: linear-gradient($grd-white-alittledarkerwhite);
+
+  &__box:first-child {
+    padding-top: 1.5rem;
+    background: linear-gradient($grd-orange-pink);
+  }
+
+  &__box {
+    padding: 0 1.75rem 2rem;
+    background: $clr-white;
+    border-radius: 0.625rem;
+
+    & img {
+      position: relative;
+      transform: translateY(-43%);
+    }
+  }
+
+  &__desc {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
