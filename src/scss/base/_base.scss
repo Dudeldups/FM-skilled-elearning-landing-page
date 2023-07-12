@@ -3,3 +3,9 @@
 .padding-inline {
   padding-inline: $padding-inline-main;
 }
+
+.logo {
+  @include mq($until: 768px) {
+    height: 1.45rem;
+  }
+}

@@ -5,10 +5,4 @@
   align-items: center;
   justify-content: space-between;
   padding-block: get-clamp(1rem, 1.5rem, 23.4375rem, 48rem);
-
-  &__logo {
-    @include mq($until: 768px) {
-      height: 1.45rem;
-    }
-  }
 }

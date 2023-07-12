@@ -24,4 +24,13 @@
       opacity: 50%;
     }
   }
+
+  .footer & {
+    background-image: linear-gradient($grd-blue-pink);
+
+    &:hover,
+    &:focus {
+      opacity: 50%;
+    }
+  }
 }

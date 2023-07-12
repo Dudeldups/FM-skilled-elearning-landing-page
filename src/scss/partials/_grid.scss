@@ -3,6 +3,8 @@
 .grid {
   display: grid;
   gap: 2.5rem 0.7rem;
+  margin-top: 1.5rem;
+  padding-bottom: 5rem;
   background: linear-gradient($grd-white-alittledarkerwhite);
 
   &__box:first-child {

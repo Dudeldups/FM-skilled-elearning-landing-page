@@ -1,4 +1,12 @@
 @use "../abstracts/" as *;
 
 .footer {
+  background: $clr-blue-dark;
+
+  &__inner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 2.6rem;
+  }
 }
