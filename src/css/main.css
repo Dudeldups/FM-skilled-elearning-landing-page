@@ -83,21 +83,69 @@ body {
   color: #fff;
 }
 
+.cta__title {
+  font-size: 2.5rem;
+  color: #13183f;
+}
+.cta__desc {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #83869a;
+}
+
+.padding-inline {
+  padding-inline: clamp(
+    1rem,
+    6.11vw + -0.43rem,
+    2.5rem
+  );
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding-block: clamp(
+    1rem,
+    2.04vw + 0.52rem,
+    1.5rem
+  );
 }
 @media (max-width: 48em) {
   .header__logo {
-    transform: scale(0.778);
+    height: 1.45rem;
+  }
+}
+
+.cta {
+  position: relative;
+  overflow-x: clip;
+}
+.cta__title {
+  margin-top: 1.38rem;
+  max-width: 15ch;
+}
+.cta__desc {
+  margin-top: 1.62rem;
+  max-width: 35ch;
+}
+@media (max-width: 48em) {
+  .cta__img {
+    margin-inline: auto;
+    transform: scale(1.275);
+  }
+}
+@media (min-width: 48em) {
+  .cta__img {
+    position: absolute;
+    inset: 0 0 auto auto;
+    transform: scale(0.8) translate(55%, -40%);
   }
 }
 
 .btn {
   padding: 0.9rem 1.5rem;
-  border-radius: 100px;
+  border-radius: 5rem;
 }
 .header .btn {
   background-color: #13183f;
@@ -106,6 +154,9 @@ body {
   background-color: #666ca3;
 }
 .cta .btn {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+  padding: 1rem 2.35rem;
   background-image: linear-gradient(#ff6f48, #f02aa6);
 }
 .cta .btn:hover, .cta .btn:focus {

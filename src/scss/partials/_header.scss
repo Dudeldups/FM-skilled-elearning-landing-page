@@ -4,11 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding-block: get-clamp(1rem, 1.5rem, 23.4375rem, 48rem);
 
   &__logo {
     @include mq($until: 768px) {
-      transform: scale(0.778);
+      height: 1.45rem;
     }
   }
 }

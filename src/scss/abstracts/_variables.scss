@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 // colors
 
 $clr-blue-light: #666ca3;
@@ -11,3 +13,7 @@ $clr-white: #fff;
 
 $grd-orange-pink: #ff6f48, #f02aa6;
 $grd-blue-pink: #4851ff, #f02aa6;
+
+// sizing
+
+$padding-inline-main: get-clamp(1rem, 2.5rem, 23.4375rem, 48rem);
