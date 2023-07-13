@@ -176,7 +176,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-inline: auto;
   padding-block: clamp(
     1rem,
     2.04vw + 0.52rem,
@@ -216,19 +215,22 @@ body {
   .cta__img {
     position: absolute;
     inset: 0;
-    transform: scale(0.9) translateX(50%) translateY(-80%);
-  }
-}
-@media (min-width: 62.5em) {
-  .cta__img {
-    transform: scale(0.9) translateX(47%) translateY(-100%);
+    transform: scale(0.9) translateX(47%) translateY(max(-45% - 20vw, -100%));
   }
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17.91rem, 1fr));
-  gap: 2.5rem 0.7rem;
+  gap: clamp(
+    2.5rem,
+    6.4vw + 1rem,
+    5rem
+  ) clamp(
+    0.7rem,
+    3.02vw + -0.01rem,
+    1.88rem
+  );
   padding-bottom: clamp(
     5rem,
     25.86vw + -7.41rem,
@@ -324,5 +326,5 @@ body {
   background-image: linear-gradient(#4851ff, #f02aa6);
 }
 .footer .btn:hover, .footer .btn:focus {
-  opacity: 50%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(#4851ff, #f02aa6);
 }/*# sourceMappingURL=main.css.map */

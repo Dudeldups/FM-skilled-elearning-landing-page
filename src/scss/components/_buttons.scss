@@ -29,7 +29,11 @@
 
     &:hover,
     &:focus {
-      opacity: 50%;
+      background-image: linear-gradient(
+          rgba($clr-white, 0.5) 0%,
+          rgba($clr-white, 0.5) 100%
+        ),
+        linear-gradient($grd-blue-pink);
     }
   }
 }

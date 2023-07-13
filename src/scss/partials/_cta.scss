@@ -29,11 +29,7 @@
     @include mq(768px) {
       position: absolute;
       inset: 0;
-      transform: scale(0.9) translateX(50%) translateY(-80%);
-    }
-
-    @include mq(1000px) {
-      transform: scale(0.9) translateX(47%) translateY(-100%);
+      transform: scale(0.9) translateX(47%) translateY(max(-45% - 20vw, -100%));
     }
   }
 }
