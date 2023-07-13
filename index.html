@@ -20,7 +20,7 @@
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body>
-    <header class="header padding-inline">
+    <header class="header padding-inline max-width">
       <a href="#">
         <img
           src="src/assets/images/logo-dark.svg"
@@ -32,7 +32,7 @@
     </header>
 
     <main>
-      <div class="cta padding-inline">
+      <div class="cta max-width">
         <article class="cta__text">
           <h1 class="cta__title">Maximize skill, minimize budget</h1>
           <p class="cta__desc">
@@ -60,61 +60,65 @@
         </aside>
       </div>
 
-      <div class="grid padding-inline">
-        <section class="grid__box">
-          <h2 class="grid__title-main">Check out our most popular courses!</h2>
-        </section>
+      <div class="grid__bg-wrapper">
+        <div class="grid max-width">
+          <section class="grid__box">
+            <h2 class="grid__title-main">
+              Check out our most popular courses!
+            </h2>
+          </section>
 
-        <article class="grid__box">
-          <img src="src/assets/images/icon-animation.svg" alt="" />
-          <h3 class="grid__title-sub">Animation</h3>
-          <p class="grid__desc">
-            Learn the latest animation techniques to create stunning motion
-            design and captivate your audience.
-          </p>
-          <a href="#" class="grid__link">Get Started</a>
-        </article>
-        <article class="grid__box">
-          <img src="src/assets/images/icon-design.svg" alt="" />
-          <h3 class="grid__title-sub">Design</h3>
-          <p class="grid__desc">
-            Create beautiful, usable interfaces to help shape the future of how
-            the web looks.
-          </p>
-          <a href="#" class="grid__link">Get Started</a>
-        </article>
-        <article class="grid__box">
-          <img src="src/assets/images/icon-photography.svg" alt="" />
-          <h3 class="grid__title-sub">Photography</h3>
-          <p class="grid__desc">
-            Explore critical fundamentals like lighting, composition, and focus
-            to capture exceptional photos.
-          </p>
-          <a href="#" class="grid__link">Get Started</a>
-        </article>
-        <article class="grid__box">
-          <img src="src/assets/images/icon-crypto.svg" alt="" />
-          <h3 class="grid__title-sub">Crypto</h3>
-          <p class="grid__desc">
-            All you need to know to get started investing in crypto. Go from
-            beginner to advanced with this 54 hour course.
-          </p>
-          <a href="#" class="grid__link">Get Started</a>
-        </article>
-        <article class="grid__box">
-          <img src="src/assets/images/icon-business.svg" alt="" />
-          <h3 class="grid__title-sub">Business</h3>
-          <p class="grid__desc">
-            A step-by-step playbook to help you start, scale, and sustain your
-            business without outside investment.
-          </p>
-          <a href="#" class="grid__link">Get Started</a>
-        </article>
+          <article class="grid__box">
+            <img src="src/assets/images/icon-animation.svg" alt="" />
+            <h3 class="grid__title-sub">Animation</h3>
+            <p class="grid__desc">
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+            <a href="#" class="grid__link">Get Started</a>
+          </article>
+          <article class="grid__box">
+            <img src="src/assets/images/icon-design.svg" alt="" />
+            <h3 class="grid__title-sub">Design</h3>
+            <p class="grid__desc">
+              Create beautiful, usable interfaces to help shape the future of
+              how the web looks.
+            </p>
+            <a href="#" class="grid__link">Get Started</a>
+          </article>
+          <article class="grid__box">
+            <img src="src/assets/images/icon-photography.svg" alt="" />
+            <h3 class="grid__title-sub">Photography</h3>
+            <p class="grid__desc">
+              Explore critical fundamentals like lighting, composition, and
+              focus to capture exceptional photos.
+            </p>
+            <a href="#" class="grid__link">Get Started</a>
+          </article>
+          <article class="grid__box">
+            <img src="src/assets/images/icon-crypto.svg" alt="" />
+            <h3 class="grid__title-sub">Crypto</h3>
+            <p class="grid__desc">
+              All you need to know to get started investing in crypto. Go from
+              beginner to advanced with this 54 hour course.
+            </p>
+            <a href="#" class="grid__link">Get Started</a>
+          </article>
+          <article class="grid__box">
+            <img src="src/assets/images/icon-business.svg" alt="" />
+            <h3 class="grid__title-sub">Business</h3>
+            <p class="grid__desc">
+              A step-by-step playbook to help you start, scale, and sustain your
+              business without outside investment.
+            </p>
+            <a href="#" class="grid__link">Get Started</a>
+          </article>
+        </div>
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="footer__inner-wrapper padding-inline">
+    <div class="footer__bg-wrapper">
+      <footer class="footer max-width">
         <a href="#">
           <img
             src="src/assets/images/logo-light.svg"
@@ -123,7 +127,7 @@
           />
         </a>
         <button class="btn">Get Started</button>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

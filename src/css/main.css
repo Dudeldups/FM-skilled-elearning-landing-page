@@ -79,17 +79,34 @@ body {
 }
 
 .btn {
+  font-size: clamp(
+    1rem,
+    0.86vw + 0.59rem,
+    1.13rem
+  );
   font-weight: 700;
   color: #fff;
 }
 
 .cta__title {
-  font-size: 2.5rem;
+  font-size: clamp(
+    2.5rem,
+    6.9vw + -0.81rem,
+    3.5rem
+  );
   color: #13183f;
 }
 .cta__desc {
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: clamp(
+    1rem,
+    0.86vw + 0.59rem,
+    1.13rem
+  );
+  line-height: clamp(
+    1.63rem,
+    0.86vw + 1.21rem,
+    1.75rem
+  );
   color: #83869a;
 }
 
@@ -115,7 +132,9 @@ body {
   text-decoration: none;
 }
 
-.padding-inline {
+.max-width {
+  max-width: 69.38rem;
+  margin-inline: auto;
   padding-inline: clamp(
     1rem,
     6.11vw + -0.43rem,
@@ -133,6 +152,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-inline: auto;
   padding-block: clamp(
     1rem,
     2.04vw + 0.52rem,
@@ -143,14 +163,19 @@ body {
 .cta {
   position: relative;
   overflow-x: clip;
+  margin-top: 1.38rem;
+}
+@media (min-width: 48em) {
+  .cta {
+    margin-top: 4rem;
+  }
 }
 .cta__title {
-  margin-top: 1.38rem;
   max-width: 15ch;
 }
 .cta__desc {
   margin-top: 1.62rem;
-  max-width: 35ch;
+  max-width: 34ch;
 }
 @media (max-width: 48em) {
   .cta__img {
@@ -162,23 +187,40 @@ body {
   .cta__img {
     position: absolute;
     inset: 0 0 auto auto;
-    transform: scale(0.9) translate(50%, -35%);
+    transform: scale(0.91) translate(48%, calc(-40% + 5vw));
   }
 }
 
 .grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.91rem, 1fr));
   gap: 2.5rem 0.7rem;
   margin-top: 1.5rem;
   padding-bottom: 5rem;
+}
+@media (min-width: 48em) {
+  .grid {
+    margin-top: 9rem;
+  }
+}
+.grid__bg-wrapper {
   background: linear-gradient(#fff, #f0f1ff);
 }
 .grid__box:first-child {
   padding-top: 1.5rem;
   background: linear-gradient(#ff6f48, #f02aa6);
 }
+@media (min-width: 40.625em) {
+  .grid__box:first-child {
+    padding-top: 3.5rem;
+  }
+}
 .grid__box {
-  padding: 0 1.75rem 2rem;
+  padding: 0 clamp(
+    1.75rem,
+    3.39vw + 0.37rem,
+    2rem
+  ) 2rem;
   background: #fff;
   border-radius: 0.625rem;
 }
@@ -192,17 +234,17 @@ body {
 }
 
 .footer {
-  background: #13183f;
-}
-.footer__inner-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-block: 2.6rem;
 }
+.footer__bg-wrapper {
+  background: #13183f;
+}
 
 .btn {
-  padding: 0.9rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 5rem;
 }
 .header .btn {
@@ -212,9 +254,12 @@ body {
   background-color: #666ca3;
 }
 .cta .btn {
-  margin-top: 1.5rem;
+  margin-top: clamp(
+    1.5rem,
+    6.9vw + -1.81rem,
+    2.5rem
+  );
   margin-bottom: 4rem;
-  padding: 1rem 2.35rem;
   background-image: linear-gradient(#ff6f48, #f02aa6);
 }
 .cta .btn:hover, .cta .btn:focus {

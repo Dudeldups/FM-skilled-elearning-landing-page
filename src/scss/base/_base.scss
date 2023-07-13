@@ -1,6 +1,8 @@
 @use "../abstracts/" as *;
 
-.padding-inline {
+.max-width {
+  max-width: 69.38rem;
+  margin-inline: auto;
   padding-inline: $padding-inline-main;
 }
 

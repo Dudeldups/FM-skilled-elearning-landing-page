@@ -3,15 +3,19 @@
 .cta {
   position: relative;
   overflow-x: clip;
+  margin-top: 1.38rem;
+
+  @include mq(768px) {
+    margin-top: 4rem;
+  }
 
   &__title {
-    margin-top: 1.38rem;
     max-width: 15ch;
   }
 
   &__desc {
     margin-top: 1.62rem;
-    max-width: 35ch;
+    max-width: 34ch;
   }
 
   &__img {
@@ -23,7 +27,7 @@
     @include mq(768px) {
       position: absolute;
       inset: 0 0 auto auto;
-      transform: scale(0.9) translate(50%, -35%);
+      transform: scale(0.91) translate(48%, calc(-40% + 5vw));
     }
   }
 }

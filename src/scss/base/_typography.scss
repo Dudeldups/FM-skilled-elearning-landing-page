@@ -18,19 +18,20 @@ body {
 }
 
 .btn {
+  font-size: get-clamp(1rem, 1.125rem, 48rem, 62.5rem);
   font-weight: 700;
   color: $clr-white;
 }
 
 .cta {
   &__title {
-    font-size: 2.5rem;
+    font-size: get-clamp(2.5rem, 3.5rem, 48rem, 62.5rem);
     color: $clr-blue-dark;
   }
 
   &__desc {
-    font-size: 1rem;
-    line-height: 1.625rem;
+    font-size: get-clamp(1rem, 1.125rem, 48rem, 62.5rem);
+    line-height: get-clamp(1.625rem, 1.75rem, 48rem, 62.5rem);
     color: $clr-grey;
   }
 }

@@ -2,18 +2,30 @@
 
 .grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.91rem, 1fr));
   gap: 2.5rem 0.7rem;
   margin-top: 1.5rem;
   padding-bottom: 5rem;
-  background: linear-gradient($grd-white-alittledarkerwhite);
+
+  @include mq(768px) {
+    margin-top: 9rem;
+  }
+
+  &__bg-wrapper {
+    background: linear-gradient($grd-white-alittledarkerwhite);
+  }
 
   &__box:first-child {
     padding-top: 1.5rem;
     background: linear-gradient($grd-orange-pink);
+
+    @include mq(650px) {
+      padding-top: 3.5rem;
+    }
   }
 
   &__box {
-    padding: 0 1.75rem 2rem;
+    padding: 0 get-clamp(1.75rem, 2rem, 40.625rem, 48rem) 2rem;
     background: $clr-white;
     border-radius: 0.625rem;
 
