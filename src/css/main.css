@@ -207,6 +207,7 @@ body {
   max-width: 34ch;
 }
 .cta__img {
+  z-index: -1;
   max-width: 72.92rem;
   margin-inline: auto;
   transform: scale(1.275);
