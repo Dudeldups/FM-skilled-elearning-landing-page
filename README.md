@@ -19,7 +19,7 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
 
 ### Links
 
-- [Solution on Frontend Mentor]()
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/scss-skilled-landing-page-S8EuXTjRdA)
 - [Live site](https://dudeldups.github.io/FM-skilled-elearning-landing-page/)
 
 ## My process
