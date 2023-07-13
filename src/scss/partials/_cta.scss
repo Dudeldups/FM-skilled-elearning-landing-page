@@ -1,12 +1,15 @@
 @use "../abstracts/" as *;
 
 .cta {
-  position: relative;
-  overflow-x: clip;
   margin-top: 1.38rem;
 
   @include mq(768px) {
-    margin-top: 4rem;
+    margin-top: get-clamp(4rem, 9.5rem, 48rem, 62.5rem);
+  }
+
+  &__wrapper {
+    position: relative;
+    overflow-x: clip;
   }
 
   &__title {
@@ -14,20 +17,23 @@
   }
 
   &__desc {
-    margin-top: 1.62rem;
+    margin-top: 1.8rem;
     max-width: 34ch;
   }
 
   &__img {
-    @include mq($until: 768px) {
-      margin-inline: auto;
-      transform: scale(1.275);
-    }
+    max-width: 72.92rem;
+    margin-inline: auto;
+    transform: scale(1.275);
 
     @include mq(768px) {
       position: absolute;
-      inset: 0 0 auto auto;
-      transform: scale(0.91) translate(48%, calc(-40% + 5vw));
+      inset: 0;
+      transform: scale(0.9) translateX(50%) translateY(-80%);
+    }
+
+    @include mq(1000px) {
+      transform: scale(0.9) translateX(47%) translateY(-100%);
     }
   }
 }

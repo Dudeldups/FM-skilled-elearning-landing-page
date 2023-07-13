@@ -4,8 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17.91rem, 1fr));
   gap: 2.5rem 0.7rem;
-  margin-top: 1.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: get-clamp(5rem, 8.75rem, 48rem, 62.5rem);
 
   @include mq(768px) {
     margin-top: 9rem;
@@ -25,18 +24,31 @@
   }
 
   &__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     padding: 0 get-clamp(1.75rem, 2rem, 40.625rem, 48rem) 2rem;
     background: $clr-white;
     border-radius: 0.625rem;
 
     & img {
-      position: relative;
-      transform: translateY(-43%);
+      position: absolute;
+      inset: 0 auto auto 0;
+      transform: translateY(-43%)
+        translateX(get-clamp(1.75rem, 2rem, 40.625rem, 48rem));
     }
+  }
+
+  &__title-sub {
+    margin-top: get-clamp(3.5rem, 4rem, 48rem, 62.5rem);
   }
 
   &__desc {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+  }
+
+  &__link {
+    margin-top: auto;
   }
 }

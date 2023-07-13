@@ -38,19 +38,19 @@ body {
 
 .grid {
   &__title-main {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: get-clamp(1.5rem, 2rem, 48rem, 62.5rem);
+    line-height: get-clamp(2rem, 2.5rem, 48rem, 62.5rem);
     color: $clr-white;
   }
 
   &__title-sub {
-    font-size: 1.25rem;
+    font-size: get-clamp(1.25rem, 1.5rem, 48rem, 62.5rem);
     color: $clr-blue-dark;
   }
 
   &__desc {
-    font-size: 1rem;
-    line-height: 1.625rem;
+    font-size: get-clamp(1rem, 1.125rem, 48rem, 62.5rem);
+    line-height: get-clamp(1.625rem, 1.75rem, 48rem, 62.5rem);
     color: $clr-grey;
   }
 

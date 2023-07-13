@@ -1,5 +1,9 @@
 @use "../abstracts/" as *;
 
+body {
+  overflow-x: clip;
+}
+
 .max-width {
   max-width: 69.38rem;
   margin-inline: auto;

@@ -15,7 +15,7 @@
 
   .cta & {
     margin-top: get-clamp(1.5rem, 2.5rem, 48rem, 62.5rem);
-    margin-bottom: 4rem;
+    margin-bottom: get-clamp(4rem, 7rem, 48rem, 62.5rem);
     background-image: linear-gradient($grd-orange-pink);
 
     &:hover,
